@@ -1,2 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System.Security.Cryptography;
+
+RandomNumberGeneration randomNumber = new RandomNumberGeneration();
+GuessValidation validation = new GuessValidation();
+
+System.Console.WriteLine("Welcome to Dice Roll! Good Luck!");
+
+randomNumber.DiceRoll();
+validation.GuessValidater();
+
+Console.ReadKey();
