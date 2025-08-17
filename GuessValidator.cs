@@ -5,7 +5,6 @@ class GuessValidation
     int userGuess;
     while (true)
     {
-    System.Console.WriteLine("Try to guess the dice roll!");
     string userInput = Console.ReadLine();
     if (int.TryParse(userInput, out userGuess))
     {

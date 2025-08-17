@@ -1,11 +1,10 @@
 ﻿using System.Security.Cryptography;
 
-RandomNumberGeneration randomNumber = new RandomNumberGeneration();
-GuessValidation validation = new GuessValidation();
+Rules gameplay = new Rules();
 
 System.Console.WriteLine("Welcome to Dice Roll! Good Luck!");
 
-randomNumber.DiceRoll();
-validation.GuessValidater();
+gameplay.DiceRoll();
+gameplay.GameMechanics();
 
 Console.ReadKey();
